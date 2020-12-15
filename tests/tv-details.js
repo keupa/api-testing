@@ -32,12 +32,12 @@ describe("Get top rated tv show details", () => {
     it("Get first season details of a TV show", async () =>{
         let response
         try{
-            response = await request.get(`/tv/${content.tv[0].id}/season/1`)
+            response = await request.get(`/tv/${content.tv[1].id}/season/1`)
         }catch(err){
             response = err.response
         }
+
         assert.equal(response.status, 200, `\nError: ${JSON.stringify(response.data)} 
         Message: `)
-        content.ep_details = response.data.results;
     })
   }); 
