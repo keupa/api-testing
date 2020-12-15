@@ -1,0 +1,16 @@
+{
+  "name": "api-testing",
+  "version": "1.0.0",
+  "description": "Testing Framework",
+  "main": "index.js",
+  "scripts":{
+    "test:ListW": "mocha ./tests/list-workflow.js --config .mocharc.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.2.1"
+  }
+}
